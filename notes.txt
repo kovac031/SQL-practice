@@ -13,3 +13,5 @@
 
 - insert into table
 	- FK moze sa i bez constraint dijela, u slucaju da bez, FK pocinje sa FOREIGN KEY i dobit ce automatski naziv, ali bolje samostalno nazvati
+
+- create products table
