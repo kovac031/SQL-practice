@@ -1,0 +1,15 @@
+- create db
+
+- create people table
+
+- insert into table
+	- datumi randomizirani izmedju dva datuma
+		- dob je na bazi dana rand, ne ukljucuje vrijeme dana
+		- regOn je na bazi sekunde, datetime ima i time komponentu
+
+- novi query ta novi table
+
+- create orders table
+
+- insert into table
+	- FK moze sa i bez constraint dijela, u slucaju da bez, FK pocinje sa FOREIGN KEY i dobit ce automatski naziv, ali bolje samostalno nazvati
