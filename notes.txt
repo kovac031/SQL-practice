@@ -15,3 +15,15 @@
 	- FK moze sa i bez constraint dijela, u slucaju da bez, FK pocinje sa FOREIGN KEY i dobit ce automatski naziv, ali bolje samostalno nazvati
 
 - create products table
+
+- create orders-products table for many-to-many
+	- composite primary key
+
+--------------------
+
+- ThePeople i TheProducts se mogu zasebno insert
+- tehnicki moze i TheOrders, ali to znaci da bilo koji TheOrders moze biti sparen sa bilo kojim TheProduct kod insertanja TheOrdersTheProducts tablice
+	- prema tome:
+		- TheOrders i TheOrdersTheProducts bi trebalo istovremeno, jer su kontekstualno povezani
+			- sa transaction-commit je lakse nego select xyz where ... jer ako su TheOrders i TheProducts vec popunjeni, svejedno je po kojem cemo kriteriju pisati WHERE, a ako nisu
+
